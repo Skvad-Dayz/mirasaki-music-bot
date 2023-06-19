@@ -14,7 +14,7 @@ jobs:
         continue-on-error: true
         with:
           webhook-url: ${{ secrets.DEPLOYMENT_WEBHOOK_URL }}
-          embed-author-name: "⬇️ Mirasaki Music Bot"
+          embed-author-name: "⬇️ RT Music Bot"
           embed-color: 14228765
           embed-description: "⌛ Deploying **`@${{ github.repository }}`**...\n📤 <@1111598064659079228> is now temporarily unavailable."
   deploy:
@@ -48,6 +48,6 @@ jobs:
         uses: tsickert/discord-webhook@v5.3.0
         with:
           webhook-url: ${{ secrets.DEPLOYMENT_WEBHOOK_URL }}
-          embed-author-name: "⬆️ Mirasaki Music Bot"
+          embed-author-name: "⬆️ RT Music Bot"
           embed-color: 45317
           embed-description: "✅ Finished deploying **`@${{ github.repository }}`**\n📥 <@1111598064659079228> is back online"
