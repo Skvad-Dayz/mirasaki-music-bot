@@ -14,9 +14,9 @@ jobs:
         continue-on-error: true
         with:
           webhook-url: ${{ secrets.DEPLOYMENT_WEBHOOK_URL }}
-          embed-author-name: "⬇️ RT Music Bot"
+          embed-author-name: "⬇️ SKVAD Music Bot"
           embed-color: 14228765
-          embed-description: "⌛ Deploying **`@${{ github.repository }}`**...\n📤 <@1111598064659079228> is now temporarily unavailable."
+          embed-description: "⌛ Deploying **`@${{ github.repository }}`**...\n📤 SKVAD Music Bot is now temporarily unavailable."
   deploy:
     needs: notify-start
     runs-on: ubuntu-latest
@@ -48,6 +48,6 @@ jobs:
         uses: tsickert/discord-webhook@v5.3.0
         with:
           webhook-url: ${{ secrets.DEPLOYMENT_WEBHOOK_URL }}
-          embed-author-name: "⬆️ RT Music Bot"
+          embed-author-name: "⬆️ SKVAD Music Bot"
           embed-color: 45317
-          embed-description: "✅ Finished deploying **`@${{ github.repository }}`**\n📥 <@1111598064659079228> is back online"
+          embed-description: "✅ Finished deploying **`@${{ github.repository }}`**\n📥 SKVAD Music Bot is back online"
